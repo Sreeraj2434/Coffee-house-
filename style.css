@@ -258,7 +258,7 @@ section{
 .about .row{
 display: flex;
 align-items: center;
-background:var(--black);
+background:var(--bg);
 flex-wrap: wrap;
 
 }
@@ -462,6 +462,14 @@ line-height: 1.8;
     transform: scale(1.02); /* Optional: hover effect */
 }
 
+.box .quote-icon {
+    font-size: 4rem;
+    color: #c59d5f; /* Golden tone */
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
 .review .box-container .box p {
     font-size: 1.5rem;
     line-height: 1.8;
@@ -537,7 +545,7 @@ line-height: 1.8;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background:var(--black);
+    background:var(--bg);
     border:var(--border);
 
 }
@@ -555,7 +563,7 @@ line-height: 1.8;
     font-size:1.7rem;
     color:#fff;
     text-transform: none;
-    background: none;
+    background: var(--bg);
 }
 /**contact  section end **/
 
@@ -769,7 +777,7 @@ padding:1rem 0;
 
 
     .home{
-        background-position: left;
+        background-position: center;
         justify-content: center;
         text-align: center;
     }
@@ -782,6 +790,7 @@ padding:1rem 0;
         font-size: 1.5rem;
     }
 
+    
 
 
 }
@@ -790,6 +799,10 @@ padding:1rem 0;
 @media (max-width:450px){
     html{
         font-size: 50%;
+    }
+
+    .home {
+        background-position: center left;
     }
     
 }
